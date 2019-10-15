@@ -1,0 +1,265 @@
+body {
+    margin-top: 0px;
+}
+
+.text-muted {
+    margin-right: 5px;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 4px;
+    vertical-align: top;
+    line-height: 11px;
+    font-size: 11px;
+}
+
+.chat-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-body {
+    flex: 2;
+}
+.chat-message {
+    flex: 1;
+}
+
+.chat-scroll {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.message-scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: rgba(250,250,250,.6) !important;
+}
+
+
+
+.table-overflow {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 14px;
+}
+td {
+    height: 40px !important;
+}
+.table-outbordered{ /* Убираем двойные линии между ячейками */
+    border:0px solid blue !important; /* Прячем рамку вокруг таблицы */
+}
+.table-outbordered tbody {
+    border:1px solid rgba(0, 0, 0, .3) !important; /* Прячем рамку вокруг таблицы */
+}
+
+.table-outbordered tr {
+    border:0px solid red !important;
+}
+
+
+
+.chat-body ul {
+    margin: 0;
+    padding: 0;
+}
+
+.chat-footer {
+    border-bottom: 1px solid #bbb;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+    padding: 0px 0px 20px;
+    flex: 0;
+}
+
+hr {
+    color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.chat-header {
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    padding: 10px 10px 10px;
+    margin-bottom: 0px;
+}
+
+.msg-text {
+    font-size: 14px;
+    line-height: normal;
+    white-space: normal;
+    display: table;
+}
+
+.username {
+    cursor: pointer;
+    color: #3276b1;
+    font-weight: 700;
+    margin-bottom: 4px;
+    vertical-align: top;
+    line-height: 14px;
+    font-size: 14px;
+}
+
+.username:focus, .username:hover {
+
+    color: #214e75;
+}
+
+#chat-container .media-list .media img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #e5e7e8;
+}
+
+#chat-container .media-list .media {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.chat-flood{
+    display: none;
+}
+
+.chat-general{
+    display: block;
+}
+
+.media-body {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+.textarea-div {
+    background-color: #fff;
+    margin: 10px 0 0;
+}
+
+.typearea {
+    position: relative;
+}
+
+.textarea-controls {
+    padding: 5px;
+    display: block;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    line-height: 33px;
+    overflow: hidden;
+}
+
+
+.chat-input {
+    width: 80%;
+    box-shadow: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+    line-height: normal;
+    white-space: normal;
+}
+
+.message-input {
+    width: 100%;
+    box-shadow: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+    line-height: normal;
+    white-space: normal;
+}
+
+.message-receiver-input{
+    width: 80% !important;
+    box-shadow: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+    line-height: normal;
+    white-space: normal;
+}
+
+
+.pull-right {
+    float: right !important;
+}
+.pull-left {
+    float: left !important;
+}
+
+
+.btn-group-sm > .btn, .btn-sm {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3276b1;
+    border-color: #2c699d;
+}
+
+.btn {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.btn-logout {
+    margin-right: 0px;
+}
+
+
+
+
+
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px!important;
+}
+
+.nav-link.active{
+    background-color: #efefef !important;
+}
+.nav-link:hover{
+    background-color: #f8f9fa;
+}
+
+
+.right-panel {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+}
+.center-panel {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+}
+.vertical-nav {
+    height: 100vh;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header, .modal-footer {
+    text-align: center;
+}
+
+
+#modal-status.popover-test{
+    width: 75px;
+}
+
