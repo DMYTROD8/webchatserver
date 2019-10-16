@@ -118,9 +118,9 @@ public class UserDAO {
         return freeId;
     }
 
-    public ArrayList<String> getListAllUsers() {
+    public List<String> getListAllUsers() {
 
-        ArrayList<String> tempArr = new ArrayList<>();
+        List<String> tempArr = new ArrayList<>();
 
         for (User user : store) {
             tempArr.add(user.getLogin());

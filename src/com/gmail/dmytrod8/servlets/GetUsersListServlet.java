@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
 import static java.util.Objects.nonNull;
@@ -30,10 +31,10 @@ public class GetUsersListServlet extends HttpServlet {
         final HttpSession session = req.getSession();
         if (!auth(session)) return;
 
-        final ArrayList<String> usersList = dao.get().getListAllUsers();
+        final List<String> usersList = dao.get().getListAllUsers();
 
         if (usersList.size() > 0) {
-            final JsonElement jelement = toJSON(usersList);
+            final JsonElement jelement = toJSON((ArrayList<String>) usersList);
             srvResp.sendResponse(resp, 0, jelement);
         } else {
             srvResp.sendResponse(resp, "response:2");
